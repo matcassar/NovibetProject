@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IPStackModelStoreContainer" CdmEntityContainer="IPStackEntities">
+    <EntitySetMapping Name="IPAddresses">
+      <EntityTypeMapping TypeName="IPStackModel.IPAddress">
+        <MappingFragment StoreEntitySet="IPAddress">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="continent_code" ColumnName="continent_code" />
+          <ScalarProperty Name="continent_name" ColumnName="continent_name" />
+          <ScalarProperty Name="country_code" ColumnName="country_code" />
+          <ScalarProperty Name="country_name" ColumnName="country_name" />
+          <ScalarProperty Name="region_code" ColumnName="region_code" />
+          <ScalarProperty Name="region_name" ColumnName="region_name" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="zip" ColumnName="zip" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

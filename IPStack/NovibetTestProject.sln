@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPStackDLL", "IPStackDLL.csproj", "{737F4268-AD74-4EC8-A89E-E82EC4BA4612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPStackWebApi", "..\IPStackWebApi\IPStackWebApi.csproj", "{CACDEA10-83C3-4270-9BB3-26C4F90B6377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPStackTests", "..\IPStackTests\IPStackTests.csproj", "{DCBA02EA-D68E-4A38-88A5-5040F444B8A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{737F4268-AD74-4EC8-A89E-E82EC4BA4612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737F4268-AD74-4EC8-A89E-E82EC4BA4612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737F4268-AD74-4EC8-A89E-E82EC4BA4612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737F4268-AD74-4EC8-A89E-E82EC4BA4612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACDEA10-83C3-4270-9BB3-26C4F90B6377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACDEA10-83C3-4270-9BB3-26C4F90B6377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACDEA10-83C3-4270-9BB3-26C4F90B6377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACDEA10-83C3-4270-9BB3-26C4F90B6377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCBA02EA-D68E-4A38-88A5-5040F444B8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBA02EA-D68E-4A38-88A5-5040F444B8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBA02EA-D68E-4A38-88A5-5040F444B8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBA02EA-D68E-4A38-88A5-5040F444B8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B467ADE-6F7A-49BC-B601-8693348C109D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="IPStackModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="IPAddress">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="ip" Type="nvarchar" MaxLength="50" />
+          <Property Name="continent_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="continent_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="country_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="country_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="region_code" Type="int" />
+          <Property Name="region_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="city" Type="nvarchar" MaxLength="50" />
+          <Property Name="zip" Type="nvarchar" MaxLength="50" />
+          <Property Name="latitude" Type="float" />
+          <Property Name="longitude" Type="float" />
+        </EntityType>
+        <EntityContainer Name="IPStackModelStoreContainer">
+          <EntitySet Name="IPAddress" EntityType="Self.IPAddress" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="IPStackModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="IPAddress">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="ip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="continent_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="continent_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="country_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="country_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="region_code" Type="Int32" />
+          <Property Name="region_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="zip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="latitude" Type="Double" />
+          <Property Name="longitude" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="IPStackEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="IPAddresses" EntityType="Self.IPAddress" />
+          </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IPStackModelStoreContainer" CdmEntityContainer="IPStackEntities">
+          <EntitySetMapping Name="IPAddresses">
+            <EntityTypeMapping TypeName="IPStackModel.IPAddress">
+              <MappingFragment StoreEntitySet="IPAddress">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ip" ColumnName="ip" />
+                <ScalarProperty Name="continent_code" ColumnName="continent_code" />
+                <ScalarProperty Name="continent_name" ColumnName="continent_name" />
+                <ScalarProperty Name="country_code" ColumnName="country_code" />
+                <ScalarProperty Name="country_name" ColumnName="country_name" />
+                <ScalarProperty Name="region_code" ColumnName="region_code" />
+                <ScalarProperty Name="region_name" ColumnName="region_name" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="zip" ColumnName="zip" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

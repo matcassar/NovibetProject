@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IPStackModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="IPAddress">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="continent_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="continent_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="country_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="country_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="region_code" Type="Int32" />
+    <Property Name="region_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="zip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="latitude" Type="Double" />
+    <Property Name="longitude" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="IPStackEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="IPAddresses" EntityType="Self.IPAddress" />
+  </EntityContainer>
+</Schema>
